@@ -1,13 +1,27 @@
 {
+  "appKey": "",
+  "appSecret": "",
   "excludeScenes": [],
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "includeSdk": [
+    "anysdk"
+  ],
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
   "orientation": {
     "landscapeLeft": true,
     "landscapeRight": true,
     "portrait": false,
     "upsideDown": false
   },
-  "packageName": "org.cocos2d.helloworld",
-  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
-  "title": "hello_world",
+  "packageName": "org.cocos2d.fengyun",
+  "privateKey": "",
+  "renderMode": "0",
+  "startScene": "b6aac9c9-c1cf-4c9e-81b5-d24c0b113d73",
+  "title": "fengyun",
   "webOrientation": "auto"
 }

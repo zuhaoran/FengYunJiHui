@@ -1,0 +1,12 @@
+/**
+ * Created by Administrator on 2018/3/5 0005.
+ */
+{
+    "mysqlConfig": {
+    "host": "127.0.0.1",
+        "port": "3306",
+        "user": "root",
+        "password": "root",
+        "database": "fengyun"
+}
+}

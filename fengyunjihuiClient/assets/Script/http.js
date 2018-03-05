@@ -1,3 +1,4 @@
+
 cc.Class({
     extends: cc.Component,
 
@@ -24,3 +25,51 @@ cc.Class({
 
     // },
 });
+const Http=function () {
+    var that={};
+    var url="http://127.0.0.1:3000";
+    that.sendGet = function(ServerLink,str){
+        if(ServerLink===null) {
+            ServerLink = url;
+        }
+        else
+        {
+            ServerLink = url+ServerLink;
+        }
+        ServerLink=ServerLink+"?"+str;
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && (xhr.status >= 200 && xhr.status < 400)) {
+                var response = xhr.responseText;
+                console.log("response"+response);
+                return response;
+            }
+        };
+        xhr.open("GET", ServerLink, true);
+        xhr.send();
+    };
+    that.sendPost= function (ServerLink,str) {
+        //var str="name=1&password=2"
+        if(ServerLink===null) {
+            ServerLink = url;
+        }
+        else
+        {
+            ServerLink = url+ServerLink;
+        }
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && (xhr.status >= 200 && xhr.status <= 400)) {
+                console.log("连接成功");
+                var response = xhr.responseText;
+                console.log("response");
+                console.log(response);
+                return response;
+            }
+        };
+        xhr.open("POST", ServerLink);
+        xhr.send(str);
+    };
+    return that;
+};
+export default Http;
