@@ -90,4 +90,7 @@ function onListening() {
 }
 var SocketServer = require('../game/socket-server');
 SocketServer(server);
+const global=require('../game/global');
+const config = require("../config.json");
+global.db.connect(config.mysqlConfig);
 

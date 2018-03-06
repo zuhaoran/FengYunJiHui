@@ -17,6 +17,7 @@ router.post('/',async function (request,response) {
     var userName=request.body.userName;
     var password=request.body.password;
     var result=await login.panUser(userName,password);
+    console.log("/routes/login / result");
     console.log(result);
     response.send(result);
 })
