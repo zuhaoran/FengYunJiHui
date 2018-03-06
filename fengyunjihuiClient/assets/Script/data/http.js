@@ -27,7 +27,7 @@ cc.Class({
 });
 const Http=function () {
     var that={};
-    var url="http://127.0.0.1:3000";
+    var url="http://127.0.0.1:3000/";
     that.sendGet = function(ServerLink,str){
         if(ServerLink===null) {
             ServerLink = url;
@@ -48,7 +48,8 @@ const Http=function () {
         xhr.open("GET", ServerLink, true);
         xhr.send();
     };
-    that.sendPost= function (ServerLink,str) {
+    that.sendPost= function (ServerLink,str,cb) {
+        console.log("/http sendPost()");
         //var str="name=1&password=2"
         if(ServerLink===null) {
             ServerLink = url;
@@ -64,11 +65,13 @@ const Http=function () {
                 var response = xhr.responseText;
                 console.log("response");
                 console.log(response);
+                cb(response);
                 return response;
             }
         };
         xhr.open("POST", ServerLink);
         xhr.send(str);
+        return xhr.responseText;
     };
     return that;
 };

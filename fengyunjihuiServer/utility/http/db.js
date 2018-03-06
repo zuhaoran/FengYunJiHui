@@ -222,14 +222,22 @@ const db=function () {
         return new Promise(function(resolve, reject) {
             //查找玩家数据
             let sql = "select * from account where  userName = " + userName + ";";
-            query(sql, function (err, data) {
-                if (err) {
-                    console.log('err = ' + err);
-                }
-                console.log('check player = ' + JSON.stringify(data));
-                //cb(err, data);
-                resolve(data);
-            });
+            try{
+                query(sql, function (err, data) {
+                    if (err) {
+                        data=null;
+                        console.log('err = ' + err);
+                    }
+                    console.log('check player = ' + JSON.stringify(data));
+                    //cb(err, data);
+                    resolve(data);
+                });
+            }
+            catch (event)
+            {
+                resolve(null);
+            }
+
         });
     };
 

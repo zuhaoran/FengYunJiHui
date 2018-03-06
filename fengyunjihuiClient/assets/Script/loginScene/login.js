@@ -1,4 +1,4 @@
-import global from "./global"
+import global from "../global"
 cc.Class({
     extends: cc.Component,
 
@@ -10,6 +10,14 @@ cc.Class({
         password_edit: {
             default: null,
             type: cc.EditBox
+        },
+        userName_label:{
+            default:null,
+            type:cc.Label
+        },
+        password_label:{
+            default:null,
+            type:cc.Label
         }
     },
 
@@ -17,16 +25,39 @@ cc.Class({
     onLoad: function () {
 
     },
+    login_buttonReturn:function (response) {
 
+    },
     login_buttonClick:function (event,customData) {
         console.log("/login, login button click:"+customData);
-        var userName=this.userName_edit.string;
-        var password=this.password_edit.string;
+        var self=this;
+        var userName=self.userName_edit.string;
+        var password=self.password_edit.string;
         //var json={"userName":userName,"password":password}
         var str="userName="+userName+"&password="+password;
         console.log("/login, str:"+str);
-        var res= global.http.sendPost("/login sendPost",str);
-        console.log("/login, res:"+res);
+        var res=null;
+        global.http.sendPost("login",str,function (response) {
+            console.log("/login, login_buttonReturn response:"+response);
+            if(response=='no')
+            {
+                self.userName_label.string="账号输入错误";
+                console.log("/login, 账号输入错误");
+            }
+            else if(response=='false')
+            {
+                self.password_label.string="密码输入错误";
+                console.log("/login, 密码输入错误");
+            }else if(response=='true')
+            {
+
+            }
+            else {
+                self.password_label.string="未知错误";
+                console.log("/login, 未知错误");
+            }
+        });
+
 
     },
     register_buttonClick:function (event,customData) {

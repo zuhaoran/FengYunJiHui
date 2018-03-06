@@ -1,4 +1,4 @@
-import Http from "./http";
+import Http from "./data/http";
 import PlayerData from './data/player-data'
 const global={};
 global.http=Http();
