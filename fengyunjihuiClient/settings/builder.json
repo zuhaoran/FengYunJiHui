@@ -1,7 +1,10 @@
 {
   "appKey": "",
   "appSecret": "",
-  "excludeScenes": [],
+  "excludeScenes": [
+    "d5fc2f24-14ad-4b46-8732-2f3d5775d755",
+    "27c9e11e-0954-4752-aba3-9b7c06bf5619"
+  ],
   "includeAnySDK": false,
   "includeSDKBox": false,
   "includeSdk": [
@@ -21,7 +24,7 @@
   "packageName": "org.cocos2d.fengyun",
   "privateKey": "",
   "renderMode": "0",
-  "startScene": "b6aac9c9-c1cf-4c9e-81b5-d24c0b113d73",
+  "startScene": "a77557df-d383-42bc-b9f3-532ea489cdb5",
   "title": "fengyun",
   "webOrientation": "auto"
 }

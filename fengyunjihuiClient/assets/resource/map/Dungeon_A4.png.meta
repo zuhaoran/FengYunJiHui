@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "ae21c57a-8d00-46c5-94b4-b24978c9c400",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "Dungeon_A4": {
+      "ver": "1.0.3",
+      "uuid": "9f9e7887-0ce3-48f0-a1c3-c6ede8bafb5a",
+      "rawTextureUuid": "ae21c57a-8d00-46c5-94b4-b24978c9c400",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 512,
+      "height": 480,
+      "rawWidth": 512,
+      "rawHeight": 480,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

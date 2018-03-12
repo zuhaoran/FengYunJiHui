@@ -14,9 +14,9 @@ router.get('/', function(req, res, next) {
     res.render('index', { title: 'Express' });
 });
 router.post('/',async function (request,response) {
-    var userName=request.body.userName;
+    var user_id=request.body.user_id;
     var password=request.body.password;
-    var result=await login.panUser(userName,password);
+    var result=await login.panUser(user_id,password);
     console.log("/routes/login / result");
     console.log(result);
     response.send(result);

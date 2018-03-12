@@ -218,10 +218,10 @@ const db=function () {
     };
 
     //查询玩家
-    that.checkPlayer =async function (userName) {
+    that.checkPlayer =async function (user_id) {
         return new Promise(function(resolve, reject) {
             //查找玩家数据
-            let sql = "select * from account where  userName = " + userName + ";";
+            let sql = "select * from account where  user_id = " + user_id + ";";
             try{
                 query(sql, function (err, data) {
                     if (err) {
@@ -240,7 +240,29 @@ const db=function () {
 
         });
     };
+    //查询玩家信息
+    that.checkUserInfo =async function (user_id) {
+        return new Promise(function(resolve, reject) {
+            //查找玩家数据
+            let sql = "select * from info where  user_id = " + user_id + ";";
+            try{
+                query(sql, function (err, data) {
+                    if (err) {
+                        data=null;
+                        console.log('err = ' + err);
+                    }
+                    console.log('check player = ' + JSON.stringify(data));
+                    //cb(err, data);
+                    resolve(data);
+                });
+            }
+            catch (event)
+            {
+                resolve(null);
+            }
 
+        });
+    };
     //插入玩家信息
     that.insertPlayerInfo = function (data) {
         //插入玩家数据

@@ -4,6 +4,11 @@
 const PlayerData = function () {
     var that = {};
     that.uid = 0;
+    that.name="";
+    that.icon="";
+    that.rank="";
+    that.gold=0;
+    that.diamond=0;
     return that;
 };
 export default PlayerData;

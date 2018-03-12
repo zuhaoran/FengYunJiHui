@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="60" height="32" tilewidth="32" tileheight="32" nextobjectid="137">
+ <tileset firstgid="1" name="Dungeon_A5" tilewidth="32" tileheight="32" tilecount="128" columns="8">
+  <image source="Dungeon_A5.png" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="129" name="World_A2" tilewidth="32" tileheight="32" tilecount="192" columns="16">
+  <image source="World_A2.png" width="512" height="384"/>
+ </tileset>
+ <tileset firstgid="321" name="World_B" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="World_B.png" width="512" height="512"/>
+ </tileset>
+ <layer name="soil" width="60" height="32">
+  <data encoding="csv">
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17
+</data>
+ </layer>
+ <objectgroup name="fire" visible="0">
+  <object id="1" gid="19" x="0" y="32" width="32" height="32">
+   <properties>
+    <property name="type" value="fire"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="water" visible="0">
+  <object id="7" gid="107" x="0" y="32" width="32" height="32">
+   <properties>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="wood" visible="0">
+  <object id="3" gid="21" x="0" y="32" width="32" height="32">
+   <properties>
+    <property name="type" value="wood"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="metal" visible="0">
+  <properties>
+   <property name="type" value="metal"/>
+  </properties>
+  <object id="4" gid="8" x="0" y="32" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="ice" visible="0">
+  <object id="5" gid="4" x="0" y="32" width="32" height="32">
+   <properties>
+    <property name="type" value="ice"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="world">
+  <object id="51" gid="239" x="701" y="672" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="59" gid="239" x="417" y="607" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="60" gid="239" x="447" y="607" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="61" gid="239" x="481" y="608" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="62" gid="239" x="512" y="608" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="63" gid="239" x="545" y="608" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="64" gid="239" x="575" y="609" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="65" gid="239" x="604" y="608" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="66" gid="239" x="673" y="606" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="70" gid="239" x="705" y="606" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="71" gid="239" x="640" y="605" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="73" gid="239" x="415" y="704" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="74" gid="239" x="448" y="674" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="75" gid="239" x="479" y="671" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="76" gid="239" x="513" y="670" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="77" gid="239" x="546" y="673" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="78" gid="239" x="576" y="671" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="79" gid="239" x="608" y="672" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="80" gid="239" x="640" y="672" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="81" gid="239" x="672" y="672" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="86" gid="239" x="417" y="575" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="87" gid="239" x="411" y="670" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="88" gid="239" x="416" y="737" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="89" gid="239" x="415" y="544" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="90" gid="239" x="352" y="735" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="91" gid="239" x="351" y="705" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="92" gid="239" x="352" y="673" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="93" gid="239" x="352" y="640" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="94" gid="239" x="351" y="608" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="95" gid="239" x="354" y="544" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="98" gid="239" x="353" y="577" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="99" gid="239" x="383" y="513" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="100" gid="239" x="736" y="608" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="101" gid="239" x="734" y="673" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="102" gid="239" x="768" y="673" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="103" gid="239" x="767" y="609" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="104" gid="239" x="831" y="638" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="105" gid="239" x="799" y="672" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="106" gid="239" x="835" y="581" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="107" gid="239" x="833" y="613" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="108" gid="239" x="836" y="548" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="109" gid="239" x="835" y="516" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="110" gid="239" x="835" y="485" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="111" gid="239" x="767" y="582" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="112" gid="239" x="771" y="545" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="113" gid="239" x="772" y="508" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="114" gid="239" x="771" y="476" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="115" gid="239" x="768" y="444" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="116" gid="239" x="831" y="416" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="117" gid="239" x="862" y="415" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="118" gid="239" x="896" y="416" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="119" gid="239" x="929" y="415" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="120" gid="239" x="866" y="480" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="121" gid="239" x="897" y="479" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="122" gid="239" x="928" y="480" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="123" gid="239" x="959" y="481" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="124" gid="239" x="993" y="481" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="125" gid="239" x="800" y="416" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="126" gid="239" x="1023" y="415" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="127" gid="239" x="1026" y="449" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="128" gid="239" x="831" y="671" width="32" height="32">
+   <properties>
+    <property name="type" value="mountain"/>
+   </properties>
+  </object>
+  <object id="129" gid="365" x="959" y="385" width="32" height="32"/>
+  <object id="131" gid="366" x="991" y="385" width="32" height="32"/>
+  <object id="132" gid="381" x="962" y="416" width="32" height="32"/>
+  <object id="133" gid="382" x="992" y="416" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="role" visible="0">
+  <object id="134" name="hero" gid="340" x="385" y="447" width="32" height="32"/>
+  <object id="135" name="tower" gid="341" x="385" y="833" width="32" height="32"/>
+ </objectgroup>
+</map>

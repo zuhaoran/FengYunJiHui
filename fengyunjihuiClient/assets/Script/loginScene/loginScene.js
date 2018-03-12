@@ -23,7 +23,9 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-
+        cc.director.preloadScene('mainScene', function () {
+            cc.log('Next scene preloaded');
+        });
     },
     login_buttonReturn:function (response) {
 
@@ -31,14 +33,14 @@ cc.Class({
     login_buttonClick:function (event,customData) {
         console.log("/login, login button click:"+customData);
         var self=this;
-        var userName=self.userName_edit.string;
+        var user_id=self.userName_edit.string;
         var password=self.password_edit.string;
         //var json={"userName":userName,"password":password}
-        var str="userName="+userName+"&password="+password;
+        var str="user_id="+user_id+"&password="+password;
         console.log("/login, str:"+str);
         var res=null;
         global.http.sendPost("login",str,function (response) {
-            console.log("/login, login_buttonReturn response:"+response);
+            //console.log("/login, login_buttonReturn response:"+response);
             if(response=='no')
             {
                 self.userName_label.string="账号输入错误";
@@ -48,13 +50,12 @@ cc.Class({
             {
                 self.password_label.string="密码输入错误";
                 console.log("/login, 密码输入错误");
-            }else if(response=='true')
+            }else
             {
+                console.log(response);
+                cc.director.loadScene("mainScene");
+                console.log("/login, 切换场景");
 
-            }
-            else {
-                self.password_label.string="未知错误";
-                console.log("/login, 未知错误");
             }
         });
 
